@@ -1,0 +1,149 @@
+/* Styles Généraux */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #0f172a; /* Bleu très foncé / Noir */
+    color: #e2e8f0;
+}
+
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #1e293b;
+    color: #38bdf8; /* Bleu cyan "Cyber" */
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 2px solid #38bdf8;
+    text-align: center;
+}
+
+/* Hero Section */
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.profile-img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #38bdf8;
+}
+
+/* Parcours & Skills */
+h3 {
+    color: #38bdf8;
+    border-left: 5px solid #38bdf8;
+    padding-left: 15px;
+    margin-top: 40px;
+}
+
+.timeline .step {
+    background: #1e293b;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 40px;
+    background: #1e293b;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* Boutons Sociaux */
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+    display: inline-block;
+    color: white;
+    background: #334155; /* Gris neutre */
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.2);
+}
+
+.linkedin {
+    background: #0077b5;
+}
+
+.github {
+    background: #333;
+}
+
+/* Effet de survol sur la photo de profil */
+.profile-img:hover {
+    border-color: #f8fafc;
+    box-shadow: 0 0 15px #38bdf8;
+    transition: 0.4s;
+}/* Animation du curseur qui clignote */
+.cursor {
+    font-weight: bold;
+    color: #38bdf8;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.tagline {
+    font-family: 'Courier New', Courier, monospace; /* Police type code */
+    font-size: 1.2rem;
+    color: #10b981; /* Vert terminal */
+    background: #000;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/* Optionnel : Petit effet de lueur sur le titre */
+h1 {
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

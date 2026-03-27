@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biographie | Junior Keran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Junior Keran</h1>
+            <p class="tagline">Student@UNG:~$ <span id="typewriter"></span><span class="cursor">|</span></p>
+        </div>
+    </header>
+
+    <section class="hero container">
+        <div class="profile-card">
+            <img src="photo.jpg" alt="Junior Keran" class="profile-img">
+            <div class="bio-text">
+                <h2>À propos de moi</h2>
+                <p>Né le 24 septembre 2005, je construis chaque jour une version de moi-même que rien ni personne ne pourra arrêter. Mon parcours est une évolution constante, un travail silencieux dont les résultats parleront d’eux-mêmes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="parcours container">
+        <h3>Mon Parcours Académique</h3>
+        <div class="timeline">
+            <div class="step">
+                <strong>Primaire :</strong> Le Guide de Nos Enfants (Libreville) - Obtention du CEP.
+            </div>
+            <div class="step">
+                <strong>Secondaire :</strong> Lycée Vincent de Paul Nyonda & Lycée Public de Bikélé - Obtention du Baccalauréat.
+            </div>
+            <div class="step">
+                <strong>Actuel :</strong> Étudiant en Cybersécurité à l'Université Numérique du Gabon.
+            </div>
+        </div>
+    </section>
+
+    <section class="skills container">
+        <h3>Compétences & Langues</h3>
+        <div class="skills-grid">
+            <ul>
+                <li><strong>Langues :</strong> Français, Anglais (Niveau moyen)</li>
+                <li><strong>Programmation :</strong> HTML, Python</li>
+                <li><strong>Domaine :</strong> Cybersécurité</li>
+            </ul>
+        </div>
+        
+        <div class="social-links">
+            <a href="Juniorkeran1@gmail.com" class="social-btn">📧 Me contacter par Email</a>
+            <a href="https://www.tiktok.com/@kerann_1?_r=1&_d=ei3bfec6ekbm4b&sec_uid=MS4wLjABAAAAxZSwHWqHMy5cMWERrItrA_ui_AiHufoaFKUlbN3n6eZbNjXj1hpcj9HjOTEGVLp5&share_author_id=6789295812122100742&sharer_language=fr&source=h5_m&u_code=daicg4al12mk5e&item_author_type=1&utm_source=copy&tt_from=copy&enable_checksum=1&utm_medium=ios&share_link_id=6E7CDAC9-B2A5-44EF-AEB2-AC9BCBA6F8E5&user_id=6789295812122100742&sec_user_id=MS4wLjABAAAAxZSwHWqHMy5cMWERrItrA_ui_AiHufoaFKUlbN3n6eZbNjXj1hpcj9HjOTEGVLp5&social_share_type=4&ug_btm=b8727,b0&utm_campaign=client_share&share_app_id=1233" target="_blank" class="social-btn linkedin">🔗 tiktok</a>
+            <a href="https://www.facebook.com/share/1J9KSwVF6W/?mibextid=wwXIfr" target="_blank" class="social-btn github">💻 facebook</a>
+            <a href="https://www.instagram.com/user_krn1/#" target="_blank" class="social-btn github">💻 instagram</a>
+            <a href="https://snapchat.com/t/dLDGlrVd" target="_blank" class="social-btn github">💻 snapchat</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <blockquote>"Ce ne sont pas ceux qui commencent fort qui gagnent… Ce sont ceux qui ne s’arrêtent jamais."</blockquote>
+            <p>&copy; 2026 - Junior Keran | Déterminé à avancer.</p>
+        </div>
+    </footer>
+        </div>
+    </footer>
+    <script>
+    const text = "Étudiant en Cybersécurité | Université Numérique du Gabon";
+    let i = 0;
+    function typeWriter() {
+        if (i < text.length) {
+            document.getElementById("typewriter").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100); // Vitesse de frappe
+        }
+    }
+    window.onload = typeWriter;
+</script>
+</body>
+</html>
